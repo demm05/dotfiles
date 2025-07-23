@@ -1,2 +1,3 @@
+CONFIG_PKGS	=	config
 all:
-	@stow .
+	@stow -t ~/.config $(CONFIG_PKGS)

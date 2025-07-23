@@ -1,0 +1,11 @@
+# Profile for when ONLY the laptop screen is connected
+profile internal {
+    output eDP-2 enable
+    exec hyprctl keyword monitor "eDP-2,preferred,auto,2"
+}
+
+# Profile for when an external monitor IS connected
+profile external {
+    output eDP-2 disable
+    output HDMI-A-1 enable position 0,0
+}

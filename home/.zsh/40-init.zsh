@@ -4,7 +4,7 @@ eval "$(thefuck --alias)"
 
 # --- Zoxide ---
 # Initializes `z` for intelligent `cd`
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # --- FZF Keybindings ---
 # Set up fzf keybindings (Ctrl-T, Ctrl-R, Alt-C) for Arch Linux

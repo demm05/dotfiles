@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 if [[ "$HOST" == *"42london"* ]]; then
   if [[ -r "$HOME/.zsh/42-school.zsh" ]]; then
     source "$HOME/.zsh/42-school.zsh"
@@ -23,6 +25,3 @@ source "$HOME/.zsh/40-init.zsh"
 if [[ -f ~/.p10k.zsh ]]; then
   source ~/.p10k.zsh
 fi
-
-# Load Homebrew config script for 42
-source "$HOME/.brewconfig.zsh"

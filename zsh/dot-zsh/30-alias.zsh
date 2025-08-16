@@ -9,6 +9,7 @@ alias rm='rm -I'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias sudo='sudo ' # Enable aliases for sudo
+alias nx="nix run 'github:demm05/nixvim'"
 
 # --- Arch Specific ---
 alias pacman='sudo pacman'

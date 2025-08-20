@@ -25,3 +25,4 @@ palette = 14=#78dce8
 palette = 15=#fcfcfa
 font-size = 14
 keybind = f11=toggle_fullscreen
+app-notifications = no-clipboard-copy

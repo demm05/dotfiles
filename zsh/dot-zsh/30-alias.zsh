@@ -12,6 +12,7 @@ alias sudo='sudo ' # Enable aliases for sudo
 alias nx="nix run 'github:demm05/nixvim'"
 alias m='make'
 alias mar='make run'
+alias c="code --no-sandbox"
 
 # --- Arch Specific ---
 alias pacman='sudo pacman'

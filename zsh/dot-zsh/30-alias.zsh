@@ -13,6 +13,7 @@ alias nx="nix run 'github:demm05/nixvim'"
 alias m='make'
 alias mar='make run'
 alias c="code --no-sandbox"
+alias nano='vim'
 
 # --- Arch Specific ---
 alias pacman='sudo pacman'

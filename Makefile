@@ -15,7 +15,9 @@ tmux:
 		echo "Backing up existing tmux config to ~/.tmux.conf.bak"; \
 		mv $(HOME)/.tmux.conf $(HOME)/.tmux.conf.bak; \
 	fi
+	@mkdir -p $(HOME)/.tmux/plugins/
 	@ln -sf $(WD)/tmux/tmux.conf $(HOME)/.tmux.conf
+	@ln -sf $(WD)/tmux/tpm $(HOME)/.tmux/plugins/tpm
 
 zsh: zsh/.oh-my-zsh/oh-my-zsh.sh
 	@echo "stowing zsh configuration..."

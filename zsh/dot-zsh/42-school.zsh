@@ -1,6 +1,7 @@
 # Load Homebrew config script for 42
 source "$HOME/.brewconfig.zsh"
 
+loadNixShell() {
 # Load nix
 NIX_ENV_PATH="/media/dmelnyk/42/nix"
 if [ -z "$IN_NIX_SHELL" ]; then
@@ -22,3 +23,6 @@ if [ -z "$IN_NIX_SHELL" ]; then
     exec nix-user-chroot "$NIX_ENV_PATH" zsh -l
   fi
 fi
+}
+
+loadNixShell

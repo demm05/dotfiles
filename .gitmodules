@@ -2,20 +2,20 @@
 	path = config/nvim
 	url = git@github.com:demm05/nvim.git
 [submodule "zsh-plugins/powerlevel10k"]
-	path = zsh/themes/powerlevel10k
+	path = zsh/dot-zsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "zsh/.oh-my-zsh"]
-	path = zsh/.oh-my-zsh
+	path = zsh/dot-oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "zsh-plugins/zsh-autosuggestions"]
-	path = zsh/plugins/zsh-autosuggestions
+	path = zsh/dot-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "zsh-plugins/zsh-syntax-highlighting"]
-	path = zsh/plugins/zsh-syntax-highlighting
+	path = zsh/dot-zsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "zsh-plugins/zsh-completions"]
-	path = zsh/plugins/zsh-completions
+	path = zsh/dot-zsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "tmux/tpm"]
-	path = tmux/tpm
+	path = tmux/dot-tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm

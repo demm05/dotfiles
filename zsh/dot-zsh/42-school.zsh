@@ -3,7 +3,7 @@ source "$HOME/.brewconfig.zsh"
 
 loadNixShell() {
 # Load nix
-NIX_ENV_PATH="/media/dmelnyk/42/nix"
+NIX_ENV_PATH="/media/$USER/42/nix"
 if [ -z "$IN_NIX_SHELL" ]; then
   if [ ! -d "$NIX_ENV_PATH" ]; then
     echo "Warning: Nix chroot path not found: $NIX_ENV_PATH" >&2

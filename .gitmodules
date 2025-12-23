@@ -13,9 +13,9 @@
 [submodule "zsh-plugins/zsh-completions"]
 	path = zsh/dot-zsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
-[submodule "tmux/tpm"]
-	path = tmux/dot-tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
 [submodule "config/nvim"]
 	path = config/nvim
 	url = https://github.com/demm05/nvim.git
+[submodule "tmux/dot-tmux/plugins/tpm"]
+	path = tmux/dot-tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

@@ -1,5 +1,11 @@
+# --- Zoxide ---
 if (( $+commands[zoxide] )); then
   eval "$(zoxide init zsh --cmd cd)"
+fi
+
+# --- Direnv ---
+if (( $+commands[direnv] )); then
+  eval "$(direnv hook zsh)"
 fi
 
 # --- FZF Keybindings & Completion ---

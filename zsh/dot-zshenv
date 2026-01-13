@@ -1,0 +1,27 @@
+add_to_path() {
+  if [ -d "$1" ]; then
+    if [[ ":$PATH:" != *":$1:"* ]]; then
+      export PATH="$1:$PATH"
+    fi
+  fi
+}
+
+# --- Pixi ---
+export PIXI_HOME=/sgoinfre/students/$USER/pkg/pixi
+export PIXI_CACHE_DIR="/tmp/$USER/pixi-cache"
+if [[ -d "$PIXI_HOME" ]]; then
+    add_to_path "$PIXI_HOME/bin"
+else
+    unset PIXI_HOME
+    unset PIXI_CACHE_DIR
+fi
+
+# --- Rust / Cargo ---
+export CARGO_HOME="/sgoinfre/students/$USER/pkg/cargo"
+export RUSTUP_HOME="/sgoinfre/students/$USER/pkg/rustup"
+if [[ -d "$CARGO_HOME" ]]; then
+    add_to_path "$CARGO_HOME/bin"
+else
+    unset CARGO_HOME
+    unset RUSTUP_HOME
+fi

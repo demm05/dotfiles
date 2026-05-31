@@ -1,9 +1,9 @@
 # --- Core ---
-if [ -x "$(command -v lsd)" ]; then
-  alias ls='lsd'
-  alias l='lsd -l'
-  alias la='lsd -la'
-  alias lt='lsd --tree'
+if command -v eza &> /dev/null; then
+  alias ls='eza --icons=auto'
+  alias l='eza -l --icons=auto'
+  alias la='eza -la --icons=auto'
+  alias lt='eza --tree --icons=auto'
 else
   alias ls='ls --color=auto'
   alias l='ls -lh --color=auto'

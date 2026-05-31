@@ -1,14 +1,21 @@
 #!/bin/zsh
 
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+if [[ -n "$GEMINI_CLI" || -n "$ANTIGRAVITY_AGENT" ]]; then
+    export PS1='$ '
+    unset PROMPT_COMMAND
+    # Only source essential paths, avoid fancy UI tools
+    return
+fi
+
 function source_if_exists() {
   if [[ -r "$1" ]]; then
     source "$1"
   fi
 }
-
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 source_if_exists "$HOME/.p10k.zsh"
 # source_if_exists "$HOME/.brewconfig.zsh"
@@ -21,4 +28,8 @@ source_if_exists "$HOME/.zsh/40-interactive.zsh"
 # --- 42 School Specific ---
 if [[ "$HOST" == *"42london"* ]]; then
 #   source_if_exists "$HOME/.zsh/42-school.zsh"
+fi
+
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init zsh)"
 fi

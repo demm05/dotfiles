@@ -17,4 +17,4 @@ plugins=(
 source "$ZSH/oh-my-zsh.sh"
 
 # Initialize zsh-completions
-autoload -U compinit && compinit
+autoload -U compinit && compinit -u &>/dev/null

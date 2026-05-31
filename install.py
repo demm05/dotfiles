@@ -32,7 +32,7 @@ def setup_submodules():
 def check_dependencies():
     """Check if required and optional commands are installed."""
     required = ["stow", "git", "zsh"]
-    optional = ["zoxide", "fzf", "lsd", "direnv", "nvim"]
+    optional = ["zoxide", "fzf", "eza", "direnv", "nvim"]
     
     missing_req = [d for d in required if not shutil.which(d)]
     if missing_req:
@@ -44,7 +44,7 @@ def check_dependencies():
     if missing_opt:
         print("\n" + "!" * 40)
         print(f"Warning: Missing OPTIONAL dependencies: {', '.join(missing_opt)}")
-        print("Some features (like zoxide, fzf, lsd) will be disabled.")
+        print("Some features (like zoxide, fzf, eza) will be disabled.")
         print("Install them for the full experience!")
         print("!" * 40 + "\n")
 
